@@ -48,4 +48,15 @@ function closeside() {
       arrows : true,
       dots : true,
     });
+    $('.work_cards').slick({
+      autoplay: true,
+      autoplaySpeed : 3000,
+      arrows : false,
+      dots : false,
+      infinite: true,
+      slidesToShow: 3,
+    });
+        
   });
+
+  

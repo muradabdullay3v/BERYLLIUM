@@ -283,4 +283,35 @@ body{
 
 .work_title{
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    h2{
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 18px;
+        color: rgb(134, 134, 134);
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
+.work_cards{
+    margin-top: 50px;
+}
+
+.work_cards-item{
+    width: 500px;
+    margin: 10px 20px;
+    img{
+        width:100%;
+    }
+    h3{
+        font-size: 22px;
+    }
+    p{
+        color: rgb(116, 116, 116);
+    }
 }
