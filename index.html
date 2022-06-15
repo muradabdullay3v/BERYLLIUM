@@ -21,44 +21,33 @@
 <body>
     <!-- Header Start -->
     <header>
-        <nav class="topnav" id="myTopnav">
-            <div class="topnav_logo">
-                <img src="./images/logo.png" alt="logo">
-            </div>
-            <div class="topnav_links">
-                <div class="topnav_links-item">
-                        <a href="#">HOME</a>
+        <nav class="topnav">
+            <a href="#">CONTACT</a>
+            <a href="#">PORTFOLIO</a>
+            <div class="dropdown">
+                <button class="dropbtn">DROPDOWN 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
-                <div class="topnav_links-item">
-                        <a href="#">ABOUT</a>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">SERVICES 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
-                <div class="dropdown">
-                    <a href="#" class="dropdown_button underline_on_hover">
-                        SERVICES
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#" class="underline_on_hover">About Us</a>
-                        <a href="#" class="underline_on_hover">FAQ Page</a>
-                        <a href="#" class="underline_on_hover">Contact Us</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="dropdown_button underline_on_hover">
-                        DROPDOWN
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="#" class="underline_on_hover">About Us</a>
-                        <a href="#" class="underline_on_hover">FAQ Page</a>
-                        <a href="#" class="underline_on_hover">Contact Us</a>
-                    </div>
-                </div>
-                <div class="topnav_links-item">
-                    <a href="#">PORTFOLIO</a>
-            </div>
-                <a href="javascript:void(0);" style="font-size: 15px" class="nav_drop responsive_icon"
-                    onclick="myFunction()"><i class="fa-solid fa-bars"></i></a>
-            </div>
-        </nav>
+            </div> 
+            <a href="#">ABOUT</a>
+            <a href="#" class="active">HOME</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </nav>
         <nav class="sidebar close" id="sidebar">
             <div class="close_button">
                 <a href="javascript:void(0);" onclick="closeside()" class="close_linker"><i
