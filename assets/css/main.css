@@ -19,7 +19,7 @@ body {
   background: #52D681;
 }
 
-.container {
+.custom_container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -61,13 +61,14 @@ body {
   color: #000;
 }
 
-.topnav .icon {
+.topnav a.icon {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 30px;
   right: 25px;
   text-decoration: none;
   color: #000;
+  font-size: 25px;
 }
 
 .topnav_links {
@@ -128,12 +129,17 @@ body {
 }
 
 @media screen and (max-width: 785px) {
+  .topnav {
+    padding: 0;
+    border-bottom: 1px solid black;
+  }
   .topnav .topnav_links a {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+    top: 10px;
   }
   .dropdown .dropbtn {
     display: none;
@@ -323,5 +329,9 @@ body {
     max-height: 700px;
     opacity: 1;
   }
+}
+
+#slider {
+  max-height: 100px;
 }
 /*# sourceMappingURL=main.css.map */
