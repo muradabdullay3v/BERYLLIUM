@@ -263,5 +263,24 @@ body{
 }
 
 #slider{
-    max-height: 100px;
+    padding: 0 25px;
+    .slider-item{
+        margin: 0 auto;
+        max-height: 620px;
+        img{
+            width: 100%;
+        }
+        h2{
+            position: absolute;
+            bottom: 10px;
+            margin-left: 20px;
+            color: #fff;
+            font-weight: 400;
+            font-size: 25px;
+        }
+    }
+}
+
+.work_title{
+    text-align: center;
 }
