@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  font-weight: 500;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav .topnav_logo {
+  width: 212px;
+  height: 30px;
+}
+
+.topnav .topnav_logo img {
+  max-width: 100%;
+}
+
+.topnav_links .nav_drop {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 20px;
+  color: #6b6b6b;
+  display: none;
+}
+
+.topnav_links .dropdown,
+.topnav_links .search_icon,
+.topnav_links .basket {
+  padding: 50px 25px;
+  display: inline-block;
+}
+
+.topnav_links .dropdown a,
+.topnav_links .search_icon a,
+.topnav_links .basket a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+.topnav_links .search_icon,
+.topnav_links .basket {
+  font-size: 16px;
+}
+
+.topnav_links .search_icon span,
+.topnav_links .basket span {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.topnav_links .dropdown,
+.topnav_links .search_icon {
+  display: inline-block;
+}
+
+.topnav_links .dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  max-width: 100%;
+  top: 70px;
+  margin-left: -25px;
+  display: none;
+  padding-right: 50px;
+}
+
+.topnav_links .dropdown-content a {
+  display: block;
+  margin: 16px 25px;
+  color: #000;
+  text-decoration: none;
+}
+
+.topnav_links .dropdown-content .dropdown-content_list {
+  display: inline-block;
+  padding: 35px 20px;
+}
+
+.topnav_links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav_links .dropdown:hover .dropdown-content.shop_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  right: 250px;
+}
+
+.topnav_links .dropdown:hover .dropdown-content.shop_content a {
+  margin: 16px 0;
+}
+
+.topnav_links .dropdown:hover .dropdown-content.shop_content h2 {
+  margin-top: 25px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+.topnav_links .droprigth-content {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  left: 222px;
+  width: 200px;
+  margin-top: -50px;
+}
+
+.topnav_links .droprigth .post_types {
+  left: 180px;
+}
+
+.topnav_links .droprigth:hover .droprigth-content {
+  display: block;
+  -webkit-animation: drop_rigth 1s forwards;
+          animation: drop_rigth 1s forwards;
+}
+
+@media screen and (max-width: 1600px) {
+  .topnav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 70px;
+  }
+}
+
+.dropdown-content {
+  max-height: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  -webkit-animation: drop 1s forwards;
+          animation: drop 1s forwards;
+}
+
+.dropdown:hover .dropdown-content a,
+.dropdown:hover .dropdown-content h2 {
+  -webkit-animation: drop_text 2s forwards;
+          animation: drop_text 2s forwards;
+}
+
+@-webkit-keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 700px;
+  }
+}
+
+@keyframes drop {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 700px;
+  }
+}
+
+@-webkit-keyframes dropdown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 700px;
+    opacity: 1;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 700px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes drop_text {
+  from {
+    color: #0000;
+  }
+  to {
+    color: #000;
+  }
+}
+
+@keyframes drop_text {
+  from {
+    color: #0000;
+  }
+  to {
+    color: #000;
+  }
+}
+
+@-webkit-keyframes drop_rigth {
+  from {
+    background-color: #0000;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+
+@keyframes drop_rigth {
+  from {
+    background-color: #0000;
+  }
+  to {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .topnav {
+    padding: 20px;
+  }
+  .topnav .nav_drop {
+    display: block;
+    margin-right: 40px;
+  }
+  .topnav .topnav_logo {
+    margin-left: 40px;
+  }
+  .topnav .dropdown,
+  .topnav .basket,
+  .topnav .search_icon {
+    display: none;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+  max-width: 420px;
+  width: 100%;
+  height: 1400px;
+  top: 0;
+  right: 0px;
+  padding-top: 80px;
+  display: none;
+}
+
+.sidebar .side-dropdown {
+  margin-bottom: 20px;
+}
+
+.sidebar .side-dropdown .side-dropdown_button {
+  margin: 16px 25px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+}
+
+.sidebar .side-dropdown .side-dropdown-content {
+  margin-top: 16px;
+  display: none;
+}
+
+.sidebar .side-dropdown .side-dropdown-content a {
+  display: block;
+  padding: 7px 25px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #707070;
+}
+
+.sidebar .side-dropdown .sub_side-dropdown-content {
+  display: none;
+}
+
+.sidebar .side-dropdown .sub_side-dropdown-content a {
+  color: #707070;
+}
+
+.sidebar .side-dropdown .side-dropdown-content.opened {
+  -webkit-animation: dropdown 1s forwards;
+          animation: dropdown 1s forwards;
+  display: block;
+}
+
+.sidebar .side-dropdown .sub_side-dropdown-content.opened {
+  display: block;
+  -webkit-animation: dropdown 1s forwards;
+          animation: dropdown 1s forwards;
+}
+
+@-webkit-keyframes side {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes side {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes sideback {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -500px;
+  }
+}
+
+@keyframes sideback {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -500px;
+  }
+}
+
+.sidebar.opened {
+  -webkit-animation: side 0.5s ease-out;
+          animation: side 0.5s ease-out;
+  display: block;
+}
+
+.sidebar.close {
+  -webkit-animation: sideback 0.5s ease-out forwards;
+          animation: sideback 0.5s ease-out forwards;
+  display: block;
+}
+
+.close_button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: red;
+  font-size: 20px;
+}
+
+.close_linker {
+  color: red;
+}
+
+@media screen and (min-width: 1220px) {
+  #sidebar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
